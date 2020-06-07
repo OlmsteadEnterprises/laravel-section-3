@@ -4,6 +4,15 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            @if(session('successMsg'))
+                <div class="alert alert-success" role="alert" align="center">
+                    {{ session('successMsg') }}
+                </div>
+            @endif
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
